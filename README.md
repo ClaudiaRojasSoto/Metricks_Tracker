@@ -1,70 +1,194 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <br/>
 
-## Available Scripts
+  <h1><b>Metrics Tracker</b></h1>
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+# 📗 Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Metrics Tracker ](#-metrics-tracker-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Project Structure](#project-structure)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# 📖 Metrics Tracker <a name="about-project"></a>
 
-### `npm test`
+>Metrics Tracker, is a mobile web application built using React and Redux! This capstone project aims to provide users with a comprehensive platform to monitor and analyze numeric data related to a topic of interest. The application fetches data from an API of your choice, offering users a diverse range of metrics to explore and analyze.
+## 🛠 Built With <a name="built-with"></a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Tech Stack <a name="tech-stack"></a>
 
-### `npm run build`
+<details>
+  <summary>React-redux</summary>
+    <ul>
+      <li>This project use <a href="https://react-redux.js.org/">React</a></li>
+    </ul>
+</details>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<details>
+  <summary>HTML</summary>
+  <ul>
+    <li>This project use <a href="https://github.com/microverseinc/curriculum-html-css/blob/main/html5.md">HTML.</a></li>
+  </ul>
+</details>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<details>
+  <summary>CSS</summary>
+  <ul>
+    <li>The <a href="https://github.com/microverseinc/curriculum-html-css/blob/main/html5.md">CSS</a> is used to provide the design in the whole page.</li>
+  </ul>
+</details>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<details>
+  <summary>Linters</summary>
+  <ul>
+    <li>The <a href="https://github.com/microverseinc/linters-config">Linters</a> are tools that help us to check and solve the errors in the code</li>
+    This project count with two linters: 
+    <ul>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </ul>
+</details>
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Key Features <a name="key-features"></a>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **SPA**
+- **CRA**
+- **Styles**
+- **Router**
+- **Logged**
+- **Toolkit**
+- **React-Redux**
+- **Jest & React Test Library**
+- **Deployment**
 
-## Learn More
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀 Live Demo <a name="live-demo"></a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+> You can see a Demo [soon]().
 
-### Code Splitting
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 💻 Getting Started <a name="getting-started"></a>
 
-### Analyzing the Bundle Size
+> To get a local copy up and running, follow these steps.
+> This project requires Node.js and npm installed on your machine.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+> -Node.js
+> -npm
 
-### Making a Progressive Web App
+> -Clone this repository to your local machine using:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+>  git clone https://github.com/ClaudiaRojasSoto/Metricks_Tracker.git
 
-### Advanced Configuration
+> -Navigate to the project folder:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+> cd math_magicians
 
-### Deployment
+> -Install the project dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+> npm install
 
-### `npm run build` fails to minify
+> To start the development server, run the following command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> npm start
+
+### Project Structure
+
+> The project follows the following folder and file structure:
+
+- /src: Contains the source files of the application.
+- /src/index.js: Main entry point of the JavaScript application.
+- /src/App.js: Top-level component of the application.
+- /src/components: Directory for React component
+- /src/redux: Directory for redux administration.
+- /public: Contains the public files and assets of the application.
+- /public/index.html: Base HTML file of the application.
+- /build: Contains the generated production files.
+
+### Setup
+
+> Clone this repository to your desired folder: https://github.com/ClaudiaRojasSoto/Metricks_Tracker.git
+
+### Install
+
+> Install this project with: install Stylelint and ESLint
+
+### Usage
+
+> To run the project, execute the following command: just need a web Browser
+
+### Run tests
+
+> To run tests, run the following command: npm start
+> you just need a simple web browser to run this project for a test
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Claudia Rojas**
+
+-   GitHub: [@githubhandle](https://github.com/ClaudiaRojasSoto)
+-   LinkedIn: [LinkedIn](https://www.linkedin.com/in/claudia-soto-260504208/)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+-   **User keys - login**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
+
+> Contributions, issues, and feature requests are welcome!
+
+> Feel free to check the [issues page](https://github.com/ClaudiaRojasSoto/Metricks_Tracker/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ⭐️ Show your support <a name="support"></a>
+
+> If you like this project show support by following this account
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+> -   Microverse for providing the opportunity to learn Git and GitHub in a collaborative environment.
+
+> -   GitHub Docs for providing a wealth of information on Git and GitHub.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+> This project is [MIT](MIT.md).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
