@@ -1,0 +1,28 @@
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.continent-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.continent-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 45%; /* Ajusta el ancho de las imágenes para que quepan dos por fila */
+  max-width: 300px;
+  height: auto;
+}
