@@ -50,7 +50,7 @@ const flagsData = {
     },
     {
       name: 'Sudáfrica',
-      imagePath: '/images/africa/south_africa.png',
+      imagePath: '/images/africa/sudafrica.png',
     },
     {
       name: 'Benín',
