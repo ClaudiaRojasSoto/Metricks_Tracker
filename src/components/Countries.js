@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
+import axios from 'axios';
 import updateCountries from '../redux/actions/countriesActions';
 import flagsData from '../flagData';
 import '../styles/Countries.css';
@@ -35,6 +36,7 @@ const Countries = () => {
   const { continent } = useParams();
   const countries = useSelector((state) => state.countries.countries);
   const dispatch = useDispatch();
+  const API_KEY = '64ad6063b89f69f06a9f59558e58e751'; // Tu API key
 
   useEffect(() => {
     const countriesOfContinent = flagsData[continent];
@@ -49,9 +51,18 @@ const Countries = () => {
     );
   }
 
-  const handleCountryClick = (countryName) => {
-    console.log(countryName);
-    // logic to handle the clic event
+  const handleCountryClick = async (countryName) => {
+    const geocodingResponse = await axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${countryName}&limit=5&appid=${API_KEY}`);
+    console.log(geocodingResponse.data); // para revisar los datos devueltos
+    if (geocodingResponse.data && geocodingResponse.data[0]) {
+      const { lat, lon } = geocodingResponse.data[0];
+      // Obtiene la latitud y la longitud de la primera ciudad que retorna la API
+      const airPollutionResponse = await axios.get(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${API_KEY}`);
+      console.log(airPollutionResponse.data);
+      // Aquí podrías manejar los datos de contaminación del aire como lo necesites
+    } else {
+      console.log('Geocoding API no devolvió datos válidos');
+    }
   };
 
   const capitalizeFirstLetter = (
