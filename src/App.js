@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
-import DetailsPage from './components/DetailsPage';
 import Navbar from './components/Navbar';
+import Countries from './components/Countries';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/details/:id" element={<DetailsPage />} />
+        <Route path="/countries/:continent" element={<Countries />} />
       </Routes>
     </Router>
   );
