@@ -1,30 +1,49 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useSelector } from 'react-redux'; // Importamos useSelector desde react-redux
 import '../styles/DetailsPage.css';
 
 const DetailsPage = () => {
-  const location = useLocation();
-  const countryData = location.state.countryData;
+  // Accedemos a los datos del país desde el estado de Redux
+  const countryData = useSelector((state) => state.countries.countryData);
 
+  // Verificamos que countryData no sea null o undefined
+  if (!countryData) {
+    return <div>Loading...</div>;
+    // Retorna cualquier cosa que quieras aquí, como un componente de carga
+  }
+
+  // podemos desestructurar sus propiedades de manera segura
+  const {
+    name, capital, population, region, languages,
+  } = countryData;
   return (
     <div className="details-container">
       <div className="details-header">
-        <h1>{countryData.name}</h1>
-        <img src={countryData.imagePath} alt={countryData.name} className="country-flag" />
-      </div>
-      
-      <div className="details-main">
-        <div className="details-info">
-          <h2>Información General</h2>
-          <p>Capital: {countryData.capital}</p>
-          <p>Población: {countryData.population}</p>
-          <p>Área: {countryData.area} km²</p>
-          <p>Idioma: {countryData.languages}</p>
-        </div>
-        
-        <div className="details-map">
-          {/* Aquí puedes insertar un componente de mapa que represente la ubicación del país */}
-        </div>
+        <h1>
+          {name.common}
+        </h1>
+        {/* Accedemos al nombre común */}
+        <p>
+          Capital:
+          {capital[0]}
+        </p>
+        {/* Accedemos a la capital */}
+        <p>
+          Population:
+          {population}
+        </p>
+        {' '}
+        {/* Accedemos a la población */}
+        <p>
+          Region:
+          {region}
+        </p>
+        {/* Accedemos a la región */}
+        <p>
+          Languages:
+          {Object.values(languages).join(', ')}
+        </p>
+        {/* Accedemos a los idiomas */}
       </div>
     </div>
   );
