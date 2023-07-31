@@ -1,12 +1,236 @@
 const flagsData = {
   africa: [
     {
+      name: 'Argelia',
+      imagePath: '/images/africa/argelia.png',
+    },
+    {
       name: 'Egipto',
-      imagePath: '/images/flags/egypt.png',
+      imagePath: '/images/africa/egipto.png',
+    },
+    {
+      name: 'Libia',
+      imagePath: '/images/africa/libia.png',
+    },
+    {
+      name: 'Marruecos',
+      imagePath: '/images/africa/marruecos.png',
+    },
+    {
+      name: 'Sáhara Occidental',
+      imagePath: '/images/africa/sahara_occidental.png',
+    },
+    {
+      name: 'Sudán',
+      imagePath: '/images/africa/sudan.png',
+    },
+    {
+      name: 'Sudán del Sur',
+      imagePath: '/images/africa/sudan_del_sur.png',
+    },
+    {
+      name: 'Túnez',
+      imagePath: '/images/africa/tunez.png',
+    },
+    {
+      name: 'Botsuana',
+      imagePath: '/images/africa/botsuana.png',
+    },
+    {
+      name: 'Esuatini',
+      imagePath: '/images/africa/esuatini.png',
+    },
+    {
+      name: 'Lesotho',
+      imagePath: '/images/africa/lesotho.png',
+    },
+    {
+      name: 'Namibia',
+      imagePath: '/images/africa/namibia.png',
     },
     {
       name: 'Sudáfrica',
-      imagePath: '/images/flags/south_africa.png',
+      imagePath: '/images/africa/south_africa.png',
+    },
+    {
+      name: 'Benín',
+      imagePath: '/images/africa/benin.png',
+    },
+    {
+      name: 'Burkina Faso',
+      imagePath: '/images/africa/burkina_faso.png',
+    },
+    {
+      name: 'Cabo Verde',
+      imagePath: '/images/africa/cabo_verde.png',
+    },
+    {
+      name: 'Costa de Marfil',
+      imagePath: '/images/africa/costa_de_marfil.png',
+    },
+    {
+      name: 'Gambia',
+      imagePath: '/images/africa/gambia.png',
+    },
+    {
+      name: 'Ghana',
+      imagePath: '/images/africa/ghana.png',
+    },
+    {
+      name: 'Guinea',
+      imagePath: '/images/africa/guinea.png',
+    },
+    {
+      name: 'Guinea-Bissau',
+      imagePath: '/images/africa/guinea_bissau.png',
+    },
+    {
+      name: 'Liberia',
+      imagePath: '/images/africa/liberia.png',
+    },
+    {
+      name: 'Malí',
+      imagePath: '/images/africa/mali.png',
+    },
+    {
+      name: 'Mauritania',
+      imagePath: '/images/africa/mauritania.png',
+    },
+    {
+      name: 'Níger',
+      imagePath: '/images/africa/niguer.png',
+    },
+    {
+      name: 'Nigeria',
+      imagePath: '/images/africa/nigeria.png',
+    },
+    {
+      name: 'Santa Elena, Ascensión y Tristán de Acuña',
+      imagePath: '/images/africa/santa_elena.png',
+    },
+    {
+      name: 'Senegal',
+      imagePath: '/images/africa/senegal.png',
+    },
+    {
+      name: 'Sierra Leona',
+      imagePath: '/images/africa/sierra_leona.png',
+    },
+    {
+      name: 'Togo',
+      imagePath: '/images/africa/togo.png',
+    },
+    {
+      name: 'Burundi',
+      imagePath: '/images/africa/burundi.png',
+    },
+    {
+      name: 'Comores',
+      imagePath: '/images/africa/comores.png',
+    },
+    {
+      name: 'Eritrea',
+      imagePath: '/images/africa/eritrea.png',
+    },
+    {
+      name: 'Etiopía',
+      imagePath: '/images/africa/etiopia.png',
+    },
+    {
+      name: 'Isla Mauricio',
+      imagePath: '/images/africa/isla_mauricio.png',
+    },
+    {
+      name: 'Kenia',
+      imagePath: '/images/africa/kenia.png',
+    },
+    {
+      name: 'Madagascar',
+      imagePath: '/images/africa/madagascar.png',
+    },
+    {
+      name: 'Malaui',
+      imagePath: '/images/africa/malawi.png',
+    },
+    {
+      name: 'Mayotte',
+      imagePath: '/images/africa/mayotte.png',
+    },
+    {
+      name: 'Mozambique',
+      imagePath: '/images/africa/mozambique.png',
+    },
+    {
+      name: 'Reunión',
+      imagePath: '/images/africa/reinion.png',
+    },
+    {
+      name: 'Ruanda',
+      imagePath: '/images/africa/ruanda.png',
+    },
+    {
+      name: 'Seychelles',
+      imagePath: '/images/africa/seicheles.png',
+    },
+    {
+      name: 'Somalia',
+      imagePath: '/images/africa/somalia.png',
+    },
+    {
+      name: 'Tanzania',
+      imagePath: '/images/africa/tanzania.png',
+    },
+    {
+      name: 'Territorio Británico del Océano Índico',
+      imagePath: '/images/africa/territorio_britanico_del_oceano_indico.png',
+    },
+    {
+      name: 'Uganda',
+      imagePath: '/images/africa/uganda.png',
+    },
+    {
+      name: 'Yibuti',
+      imagePath: '/images/africa/yibuti.png',
+    },
+    {
+      name: 'Zambia',
+      imagePath: '/images/africa/zambia.png',
+    },
+    {
+      name: 'Angola',
+      imagePath: '/images/africa/angola.png',
+    },
+    {
+      name: 'Camerún',
+      imagePath: '/images/africa/camerun.png',
+    },
+    {
+      name: 'Chad',
+      imagePath: '/images/africa/chad.png',
+    },
+    {
+      name: 'Gabón',
+      imagePath: '/images/africa/gabon.png',
+    },
+    {
+      name: 'Guinea Ecuatorial',
+      imagePath: '/images/africa/guinea_ecuatorial.png',
+    },
+    {
+      name: 'República Centroafricana',
+      imagePath: '/images/africa/republica_centroafricana.png',
+    },
+    {
+      name: 'República del Congo',
+      imagePath: '/images/africa/republica_del_congo.png',
+    },
+    {
+      name: 'República Democrática del Congo',
+      imagePath: '/images/africa/congo.png',
+    },
+    {
+      name: 'Santo Tomé y Príncipe',
+      imagePath: '/images/africa/santo_tome.png',
     },
   ],
   america: [
@@ -28,7 +252,7 @@ const flagsData = {
     },
     {
       name: 'San Pedro y Miquelón',
-      imagePath: '/images/america/san_pedro_y_miquelon.png',
+      imagePath: '/images/america/san_pedro_miquelon.png',
     },
     {
       name: 'Belize',
@@ -72,7 +296,7 @@ const flagsData = {
     },
     {
       name: 'Brasil',
-      imagePath: '/images/america/brazil.png',
+      imagePath: '/images/america/brasil.png',
     },
     {
       name: 'Chile',
@@ -88,7 +312,7 @@ const flagsData = {
     },
     {
       name: 'Georgia del Sur y las Islas Sandwich del Sur',
-      imagePath: '/images/america/georgia_sur_islas_sandwich_sur.png',
+      imagePath: '/images/america/georgia_del_sur.png',
     },
     {
       name: 'Guayana',
@@ -231,32 +455,248 @@ const flagsData = {
       imagePath: '/images/america/santa_lucia.png',
     },
     {
-      name: 'Sint Maarten',
-      imagePath: '/images/america/sint_maarten.png',
+      name: 'Saint Maarten',
+      imagePath: '/images/america/saint_maarten.png',
     },
     {
       name: 'Trinidad y Tobago',
-      imagePath: '/images/america/trinidad_y_tobago.png',
+      imagePath: '/images/america/trinidad_tobago.png',
     },
   ],
   asia: [
     {
       name: 'Japón',
-      imagePath: '/images/flags/japan.png',
+      imagePath: '/images/asia/japon.png',
     },
     {
       name: 'China',
-      imagePath: '/images/flags/china.png',
+      imagePath: '/images/asia/china.png',
+    },
+    {
+      name: 'Arabia Saudita',
+      imagePath: '/images/asia/saudi_arabia.png',
+    },
+    {
+      name: 'Armenia',
+      imagePath: '/images/asia/armenia.png',
+    },
+    {
+      name: 'Azerbaiyán',
+      imagePath: '/images/asia/azerbaiyan.png',
+    },
+    {
+      name: 'Bahrein',
+      imagePath: '/images/asia/bahrain.png',
+    },
+    {
+      name: 'Catar',
+      imagePath: '/images/asia/catar.png',
+    },
+    {
+      name: 'Chipre',
+      imagePath: '/images/asia/chipre.png',
+    },
+    {
+      name: 'Emiratos Árabes Unidos',
+      imagePath: '/images/asia/emiratos_arabes_unidos.png',
+    },
+    {
+      name: 'Georgia',
+      imagePath: '/images/asia/georgia.png',
+    },
+    {
+      name: 'Iraq',
+      imagePath: '/images/asia/iraq.png',
+    },
+    {
+      name: 'Israel',
+      imagePath: '/images/asia/israel.png',
+    },
+    {
+      name: 'Jordania',
+      imagePath: '/images/asia/jordania.png',
+    },
+    {
+      name: 'Kuwait',
+      imagePath: '/images/asia/kuwait.png',
+    },
+    {
+      name: 'Líbano',
+      imagePath: '/images/asia/libano.png',
+    },
+    {
+      name: 'Omán',
+      imagePath: '/images/asia/oman.png',
+    },
+    {
+      name: 'Palestina',
+      imagePath: '/images/asia/palestina.png',
+    },
+    {
+      name: 'Siria',
+      imagePath: '/images/asia/siria.png',
+    },
+    {
+      name: 'Turquía',
+      imagePath: '/images/asia/turquia.png',
+    },
+    {
+      name: 'Yemen',
+      imagePath: '/images/asia/yemen.png',
+    },
+    {
+      name: 'Kazajistán',
+      imagePath: '/images/asia/kazajistan.png',
+    },
+    {
+      name: 'Kirguistán',
+      imagePath: '/images/asia/kirguistan.png',
+    },
+    {
+      name: 'Tayikistán',
+      imagePath: '/images/asia/tayikistan.png',
+    },
+    {
+      name: 'Turkmenistán',
+      imagePath: '/images/asia/turkmenistan.png',
+    },
+    {
+      name: 'Uzbekistán',
+      imagePath: '/images/asia/uzbekistan.png',
+    },
+    {
+      name: 'Afganistán',
+      imagePath: '/images/asia/afganistan.png',
+    },
+    {
+      name: 'Bangladesh',
+      imagePath: '/images/asia/bangladesh.png',
+    },
+    {
+      name: 'Bután',
+      imagePath: '/images/asia/butan.png',
+    },
+    {
+      name: 'India',
+      imagePath: '/images/asia/india.png',
+    },
+    {
+      name: 'Irán',
+      imagePath: '/images/asia/iran.png',
+    },
+    {
+      name: 'Maldivas',
+      imagePath: '/images/asia/maldivas.png',
+    },
+    {
+      name: 'Nepal',
+      imagePath: '/images/asia/nepal.png',
+    },
+    {
+      name: 'Pakistán',
+      imagePath: '/images/asia/pakistan.png',
+    },
+    {
+      name: 'Sri Lanka',
+      imagePath: '/images/asia/sri_lanka.png',
+    },
+    {
+      name: 'Brunéi',
+      imagePath: '/images/asia/brunei.png',
+    },
+    {
+      name: 'Camboya',
+      imagePath: '/images/asia/camboya.png',
+    },
+    {
+      name: 'Filipinas',
+      imagePath: '/images/asia/filipinas.png',
+    },
+    {
+      name: 'Indonesia',
+      imagePath: '/images/asia/indonesia.png',
+    },
+    {
+      name: 'Laos',
+      imagePath: '/images/asia/laos.png',
+    },
+    {
+      name: 'Malasia',
+      imagePath: '/images/asia/malasia.png',
+    },
+    {
+      name: 'Myanmar',
+      imagePath: '/images/asia/mynmar.png',
+    },
+    {
+      name: 'Singapur',
+      imagePath: '/images/asia/singapur.png',
+    },
+    {
+      name: 'Tailandia',
+      imagePath: '/images/asia/tailandia.png',
+    },
+    {
+      name: 'Timor Oriental',
+      imagePath: '/images/asia/timor_oriental.png',
+    },
+    {
+      name: 'Vietnam',
+      imagePath: '/images/asia/vietnam.png',
+    },
+    {
+      name: 'China',
+      imagePath: '/images/asia/china.png',
+    },
+    {
+      name: 'Corea del Norte',
+      imagePath: '/images/asia/corea_del_norte.png',
+    },
+    {
+      name: 'Corea del Sur',
+      imagePath: '/images/asia/corea_del_sur.png',
+    },
+    {
+      name: 'Hong Kong',
+      imagePath: '/images/asia/hong_kong.png',
+    },
+    {
+      name: 'Macao',
+      imagePath: '/images/asia/macao.png',
+    },
+    {
+      name: 'Mongolia',
+      imagePath: '/images/asia/mongolia.png',
+    },
+    {
+      name: 'Taiwán',
+      imagePath: '/images/asia/taiwan.png',
     },
   ],
   australia: [
     {
       name: 'Australia',
-      imagePath: '/images/flags/australia.png',
+      imagePath: '/images/australia/australia.png',
     },
     {
-      name: 'Nueva Zelanda',
-      imagePath: '/images/flags/new_zealand.png',
+      name: 'Isla de Navidad',
+      imagePath: '/images/australia/isla_navidad.png',
+    },
+    {
+      name: 'Isla Norfolk',
+      imagePath: '/images/australia/isla_norfolk.png',
+    },
+    {
+      name: 'Islas Cocos',
+      imagePath: '/images/australia/isla_cocos.png',
+    },
+    {
+      name: 'Islas Heard y McDonald',
+      imagePath: '/images/australia/islas_hearld.png',
+    },
+    {
+      name: 'Nueva Zelandia',
+      imagePath: '/images/australia/nueva_zelandia.png',
     },
   ],
   europa: [
@@ -290,7 +730,7 @@ const flagsData = {
     },
     {
       name: 'Principado de Mónaco',
-      imagePath: '/images/europe/principado_monaco.png',
+      imagePath: '/images/europe/principado_de_monaco.png',
     },
     {
       name: 'Suiza',
@@ -334,7 +774,7 @@ const flagsData = {
     },
     {
       name: 'Ucrania',
-      imagePath: '/images/europe/ucrania.png',
+      imagePath: '/images/europe/ukrania.png',
     },
     {
       name: 'Bailía de Guernsey',
@@ -410,11 +850,11 @@ const flagsData = {
     },
     {
       name: 'Bosnia y Hercegovina',
-      imagePath: '/images/europe/bosnia_hercegovina.png',
+      imagePath: '/images/europe/bosnia.png',
     },
     {
       name: 'Ciudad del Vaticano',
-      imagePath: '/images/europe/ciudad_vaticano.png',
+      imagePath: '/images/europe/ciudad_del_vaticano.png',
     },
     {
       name: 'Croacia',
@@ -446,7 +886,7 @@ const flagsData = {
     },
     {
       name: 'Macedonia del Norte',
-      imagePath: '/images/europe/macedonia_norte.png',
+      imagePath: '/images/europe/macedonia_del_norte.png',
     },
     {
       name: 'Malta',
@@ -471,12 +911,104 @@ const flagsData = {
   ],
   oceania: [
     {
-      name: 'Fiyi',
-      imagePath: '/images/flags/fiji.png',
+      name: 'Islas Cook',
+      imagePath: '/images/oceania/cook_island.png',
+    },
+    {
+      name: 'Islas Pitcairn',
+      imagePath: '/images/oceania/pitcairn_islands.png',
+    },
+    {
+      name: 'Niue',
+      imagePath: '/images/oceania/niue.png',
+    },
+    {
+      name: 'Polinesia Francesa',
+      imagePath: '/images/oceania/french_polynesia.png',
     },
     {
       name: 'Samoa',
-      imagePath: '/images/flags/samoa.png',
+      imagePath: '/images/oceania/samoa.png',
+    },
+    {
+      name: 'Samoa Americana',
+      imagePath: '/images/oceania/american_samoa.png',
+    },
+    {
+      name: 'Tokelau',
+      imagePath: '/images/oceania/tokelau.png',
+    },
+    {
+      name: 'Tonga',
+      imagePath: '/images/oceania/tonga.png',
+    },
+    {
+      name: 'Tuvalu',
+      imagePath: '/images/oceania/tuvalu.png',
+    },
+    {
+      name: 'Wallis y Futuna',
+      imagePath: '/images/oceania/wallis_futuna.png',
+    },
+    {
+      name: 'Fiyi',
+      imagePath: '/images/oceania/fiji.png',
+    },
+    {
+      name: 'Islas Salomón',
+      imagePath: '/images/oceania/solomon_islands.png',
+    },
+    {
+      name: 'Nueva Caledonia',
+      imagePath: '/images/oceania/new_caledonia.png',
+    },
+    {
+      name: 'Papúa Nueva Guinea',
+      imagePath: '/images/oceania/papua_new_guinea.png',
+    },
+    {
+      name: 'Vanuatu',
+      imagePath: '/images/oceania/vanuatu.png',
+    },
+    {
+      name: 'Estados Federados de Micronesia',
+      imagePath: '/images/oceania/micronesia.png',
+    },
+    {
+      name: 'Guam',
+      imagePath: '/images/oceania/guam.png',
+    },
+    {
+      name: 'Islas Marianas del Norte',
+      imagePath: '/images/oceania/northern_marianas_islands.png',
+    },
+    {
+      name: 'Islas Marshall',
+      imagePath: '/images/oceania/marshall_islands.png',
+    },
+    {
+      name: 'Islas ultramarinas menores de los Estados Unidos',
+      imagePath: '/images/oceania/us_minor_outlying_islands.png',
+    },
+    {
+      name: 'Kiribati',
+      imagePath: '/images/oceania/kiribati.png',
+    },
+    {
+      name: 'Nauru',
+      imagePath: '/images/oceania/nauru.png',
+    },
+    {
+      name: 'Palaos',
+      imagePath: '/images/oceania/palaos.png',
+    },
+    {
+      name: 'Antártida',
+      imagePath: '/images/oceania/antarctica.png',
+    },
+    {
+      name: 'Territorios Australes y Antárticos Franceses',
+      imagePath: '/images/oceania/french_southern_antarctic_territories.png',
     },
   ],
 };
