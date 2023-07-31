@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import axios from 'axios';
-import updateCountries from '../redux/actions/countriesActions';
+import { updateCountries, updateCountryData } from '../redux/actions/countriesActions';
 import flagsData from '../flagData';
 import '../styles/Countries.css';
 
@@ -53,11 +53,9 @@ const Countries = () => {
   const handleCountryClick = async (country) => {
     try {
       const response = await axios.get(`https://restcountries.com/v3/alpha/${country.countryCode}`);
-      if (response.data) {
-        // Suponiendo que la respuesta es un objeto del país
+      if (response.data && response.data.length > 0) {
         console.log(response.data);
-        // Ver los datos del país en la consola
-        // Ahora puedes decidir qué datos extraer y mostrar en el componente Details
+        dispatch(updateCountryData(response.data[0]));
       } else {
         console.log('No se devolvieron datos válidos del país en la API');
       }
@@ -78,11 +76,11 @@ const Countries = () => {
         {countries.map((country) => (
           <Link
             to={{
-              pathname: `/country/${country.name}`,
+              pathname: `/country/${country.name.common}`,
               state: { countryData: country },
-              // Pass the country data as state to the Details component
+              // Pasamos toda la información del país en el estado de la ruta
             }}
-            key={country.name}
+            key={country.name.common}
           >
             <div
               className="country-item"
