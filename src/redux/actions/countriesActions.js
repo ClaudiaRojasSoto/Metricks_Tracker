@@ -3,4 +3,9 @@ const updateCountries = (countries) => ({
   payload: countries,
 });
 
-export default updateCountries;
+const updateCountryData = (countryData) => ({
+  type: 'UPDATE_COUNTRY_DATA',
+  payload: countryData,
+});
+
+export { updateCountries, updateCountryData };
