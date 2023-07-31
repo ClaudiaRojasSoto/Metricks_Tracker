@@ -9,42 +9,53 @@ const DetailsPage = () => {
   // Verificamos que countryData no sea null o undefined
   if (!countryData) {
     return <div>Loading...</div>;
-    // Retorna cualquier cosa que quieras aquí, como un componente de carga
   }
 
   // podemos desestructurar sus propiedades de manera segura
   const {
-    name, capital, population, region, languages,
+    name, capital, population, region, languages, area, flags, currencies,
   } = countryData;
+
+  // Comprobaciones antes de acceder a las propiedades
+  const commonName = name?.common ?? 'N/A';
+  const capitalName = capital?.[0] ?? 'N/A';
+  const populationCount = population ?? 'N/A';
+  const regionName = region ?? 'N/A';
+  const languageNames = languages ? Object.values(languages).join(', ') : 'N/A';
+  const areaSize = area ?? 'N/A';
+  const countryFlag = flags?.[0] ?? '';
+  const countryCurrency = currencies ? Object.keys(currencies).join(', ') : 'N/A';
+
   return (
-    <div className="details-container">
-      <div className="details-header">
-        <h1>
-          {name.common}
-        </h1>
-        {/* Accedemos al nombre común */}
-        <p>
-          Capital:
-          {capital[0]}
-        </p>
-        {/* Accedemos a la capital */}
-        <p>
-          Population:
-          {population}
-        </p>
-        {' '}
-        {/* Accedemos a la población */}
-        <p>
-          Region:
-          {region}
-        </p>
-        {/* Accedemos a la región */}
-        <p>
-          Languages:
-          {Object.values(languages).join(', ')}
-        </p>
-        {/* Accedemos a los idiomas */}
-      </div>
+    <div className="details-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <h1 style={{ textAlign: 'center' }}>
+        {commonName}
+      </h1>
+      <img src={countryFlag} alt={`${commonName} Flag`} style={{ maxWidth: '200px', maxHeight: '100px' }} />
+      <p>
+        Capital:
+        {capitalName}
+      </p>
+      <p>
+        Population:
+        {populationCount}
+      </p>
+      <p>
+        Area:
+        {areaSize}
+      </p>
+      <p>
+        Region:
+        {regionName}
+      </p>
+      <p>
+        Languages:
+        {languageNames}
+      </p>
+      <p>
+        Currency:
+        {countryCurrency}
+      </p>
     </div>
   );
 };
