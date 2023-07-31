@@ -1,0 +1,31 @@
+.details-container {
+  padding: 2em;
+}
+
+.details-header {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.country-flag {
+  width: 100px;
+  height: auto;
+}
+
+.details-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  margin-top: 2em;
+}
+
+.details-info {
+  width: 45%;
+}
+
+.details-map {
+  width: 45%;
+  height: 400px; /* Altura del mapa */
+  background: #e0e0e0; /* Color de fondo temporal hasta que se cargue el mapa */
+}
