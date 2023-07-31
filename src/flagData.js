@@ -1,5 +1,5 @@
 const flagsData = {
-  afrika: [
+  africa: [
     {
       name: 'Egipto',
       imagePath: '/images/flags/egypt.png',
@@ -239,7 +239,7 @@ const flagsData = {
       imagePath: '/images/america/trinidad_y_tobago.png',
     },
   ],
-  asien: [
+  asia: [
     {
       name: 'Japón',
       imagePath: '/images/flags/japan.png',
@@ -249,7 +249,7 @@ const flagsData = {
       imagePath: '/images/flags/china.png',
     },
   ],
-  australien: [
+  australia: [
     {
       name: 'Australia',
       imagePath: '/images/flags/australia.png',
@@ -261,215 +261,215 @@ const flagsData = {
   ],
   europa: [
     {
-        name: 'Alemania',
-        imagePath: '/images/europe/alemania.png',
-      },
-      {
-        name: 'Austria',
-        imagePath: '/images/europe/austria.png',
-      },
-      {
-        name: 'Bélgica',
-        imagePath: '/images/europe/belgica.png',
-      },
-      {
-        name: 'Francia',
-        imagePath: '/images/europe/francia.png',
-      },
-      {
-        name: 'Liechtenstein',
-        imagePath: '/images/europe/liechtenstein.png',
-      },
-      {
-        name: 'Luxemburgo',
-        imagePath: '/images/europe/luxemburgo.png',
-      },
-      {
-        name: 'Países Bajos',
-        imagePath: '/images/europe/paises_bajos.png',
-      },
-      {
-        name: 'Principado de Mónaco',
-        imagePath: '/images/europe/principado_monaco.png',
-      },
-      {
-        name: 'Suiza',
-        imagePath: '/images/europe/suiza.png',
-      },
-      {
-        name: 'Belarús',
-        imagePath: '/images/europe/belarus.png',
-      },
-      {
-        name: 'Bulgaria',
-        imagePath: '/images/europe/bulgaria.png',
-      },
-      {
-        name: 'Chequia',
-        imagePath: '/images/europe/chequia.png',
-      },
-      {
-        name: 'Eslovaquia',
-        imagePath: '/images/europe/eslovaquia.png',
-      },
-      {
-        name: 'Hungría',
-        imagePath: '/images/europe/hungria.png',
-      },
-      {
-        name: 'Moldavia',
-        imagePath: '/images/europe/moldavia.png',
-      },
-      {
-        name: 'Polonia',
-        imagePath: '/images/europe/polonia.png',
-      },
-      {
-        name: 'Rumania',
-        imagePath: '/images/europe/rumania.png',
-      },
-      {
-        name: 'Rusia',
-        imagePath: '/images/europe/rusia.png',
-      },
-      {
-        name: 'Ucrania',
-        imagePath: '/images/europe/ucrania.png',
-      },
-      {
-        name: 'Bailía de Guernsey',
-        imagePath: '/images/europe/guernsey.png',
-      },
-      {
-        name: 'Dinamarca',
-        imagePath: '/images/europe/dinamarca.png',
-      },
-      {
-        name: 'Estonia',
-        imagePath: '/images/europe/estonia.png',
-      },
-      {
-        name: 'Finlandia',
-        imagePath: '/images/europe/finlandia.png',
-      },
-      {
-        name: 'Irlanda',
-        imagePath: '/images/europe/irlanda.png',
-      },
-      {
-        name: 'Isla de Man',
-        imagePath: '/images/europe/isla_man.png',
-      },
-      {
-        name: 'Islandia',
-        imagePath: '/images/europe/islandia.png',
-      },
-      {
-        name: 'Islas Åland',
-        imagePath: '/images/europe/islas_aland.png',
-      },
-      {
-        name: 'Islas Feroe',
-        imagePath: '/images/europe/islas_feroe.png',
-      },
-      {
-        name: 'Jersey',
-        imagePath: '/images/europe/jersey.png',
-      },
-      {
-        name: 'Letonia',
-        imagePath: '/images/europe/letonia.png',
-      },
-      {
-        name: 'Lituania',
-        imagePath: '/images/europe/lituania.png',
-      },
-      {
-        name: 'Noruega',
-        imagePath: '/images/europe/noruega.png',
-      },
-      {
-        name: 'Reino Unido',
-        imagePath: '/images/europe/reino_unido.png',
-      },
-      {
-        name: 'Suecia',
-        imagePath: '/images/europe/suecia.png',
-      },
-      {
-        name: 'Svalbard y Jan Mayen',
-        imagePath: '/images/europe/svalbard_jan_mayen.png',
-      },
-      {
-        name: 'Albania',
-        imagePath: '/images/europe/albania.png',
-      },
-      {
-        name: 'Andorra',
-        imagePath: '/images/europe/andorra.png',
-      },
-      {
-        name: 'Bosnia y Hercegovina',
-        imagePath: '/images/europe/bosnia_hercegovina.png',
-      },
-      {
-        name: 'Ciudad del Vaticano',
-        imagePath: '/images/europe/ciudad_vaticano.png',
-      },
-      {
-        name: 'Croacia',
-        imagePath: '/images/europe/croacia.png',
-      },
-      {
-        name: 'Eslovenia',
-        imagePath: '/images/europe/eslovenia.png',
-      },
-      {
-        name: 'España',
-        imagePath: '/images/europe/espana.png',
-      },
-      {
-        name: 'Gibraltar',
-        imagePath: '/images/europe/gibraltar.png',
-      },
-      {
-        name: 'Grecia',
-        imagePath: '/images/europe/grecia.png',
-      },
-      {
-        name: 'Italia',
-        imagePath: '/images/europe/italia.png',
-      },
-      {
-        name: 'Kosovo',
-        imagePath: '/images/europe/kosovo.png',
-      },
-      {
-        name: 'Macedonia del Norte',
-        imagePath: '/images/europe/macedonia_norte.png',
-      },
-      {
-        name: 'Malta',
-        imagePath: '/images/europe/malta.png',
-      },
-      {
-        name: 'Montenegro',
-        imagePath: '/images/europe/montenegro.png',
-      },
-      {
-        name: 'Portugal',
-        imagePath: '/images/europe/portugal.png',
-      },
-      {
-        name: 'San Marino',
-        imagePath: '/images/europe/san_marino.png',
-      },
-      {
-        name: 'Serbia',
-        imagePath: '/images/europe/serbia.png',
-      },
-    ],
-  ozeanien: [
+      name: 'Alemania',
+      imagePath: '/images/europe/alemania.png',
+    },
+    {
+      name: 'Austria',
+      imagePath: '/images/europe/austria.png',
+    },
+    {
+      name: 'Bélgica',
+      imagePath: '/images/europe/belgica.png',
+    },
+    {
+      name: 'Francia',
+      imagePath: '/images/europe/francia.png',
+    },
+    {
+      name: 'Liechtenstein',
+      imagePath: '/images/europe/liechtenstein.png',
+    },
+    {
+      name: 'Luxemburgo',
+      imagePath: '/images/europe/luxemburgo.png',
+    },
+    {
+      name: 'Países Bajos',
+      imagePath: '/images/europe/paises_bajos.png',
+    },
+    {
+      name: 'Principado de Mónaco',
+      imagePath: '/images/europe/principado_monaco.png',
+    },
+    {
+      name: 'Suiza',
+      imagePath: '/images/europe/suiza.png',
+    },
+    {
+      name: 'Belarús',
+      imagePath: '/images/europe/belarus.png',
+    },
+    {
+      name: 'Bulgaria',
+      imagePath: '/images/europe/bulgaria.png',
+    },
+    {
+      name: 'Chequia',
+      imagePath: '/images/europe/chequia.png',
+    },
+    {
+      name: 'Eslovaquia',
+      imagePath: '/images/europe/eslovaquia.png',
+    },
+    {
+      name: 'Hungría',
+      imagePath: '/images/europe/hungria.png',
+    },
+    {
+      name: 'Moldavia',
+      imagePath: '/images/europe/moldavia.png',
+    },
+    {
+      name: 'Polonia',
+      imagePath: '/images/europe/polonia.png',
+    },
+    {
+      name: 'Rumania',
+      imagePath: '/images/europe/rumania.png',
+    },
+    {
+      name: 'Rusia',
+      imagePath: '/images/europe/rusia.png',
+    },
+    {
+      name: 'Ucrania',
+      imagePath: '/images/europe/ucrania.png',
+    },
+    {
+      name: 'Bailía de Guernsey',
+      imagePath: '/images/europe/guernsey.png',
+    },
+    {
+      name: 'Dinamarca',
+      imagePath: '/images/europe/dinamarca.png',
+    },
+    {
+      name: 'Estonia',
+      imagePath: '/images/europe/estonia.png',
+    },
+    {
+      name: 'Finlandia',
+      imagePath: '/images/europe/finlandia.png',
+    },
+    {
+      name: 'Irlanda',
+      imagePath: '/images/europe/irlanda.png',
+    },
+    {
+      name: 'Isla de Man',
+      imagePath: '/images/europe/isla_man.png',
+    },
+    {
+      name: 'Islandia',
+      imagePath: '/images/europe/islandia.png',
+    },
+    {
+      name: 'Islas Åland',
+      imagePath: '/images/europe/islas_aland.png',
+    },
+    {
+      name: 'Islas Feroe',
+      imagePath: '/images/europe/islas_feroe.png',
+    },
+    {
+      name: 'Jersey',
+      imagePath: '/images/europe/jersey.png',
+    },
+    {
+      name: 'Letonia',
+      imagePath: '/images/europe/letonia.png',
+    },
+    {
+      name: 'Lituania',
+      imagePath: '/images/europe/lituania.png',
+    },
+    {
+      name: 'Noruega',
+      imagePath: '/images/europe/noruega.png',
+    },
+    {
+      name: 'Reino Unido',
+      imagePath: '/images/europe/reino_unido.png',
+    },
+    {
+      name: 'Suecia',
+      imagePath: '/images/europe/suecia.png',
+    },
+    {
+      name: 'Svalbard y Jan Mayen',
+      imagePath: '/images/europe/svalbard_jan_mayen.png',
+    },
+    {
+      name: 'Albania',
+      imagePath: '/images/europe/albania.png',
+    },
+    {
+      name: 'Andorra',
+      imagePath: '/images/europe/andorra.png',
+    },
+    {
+      name: 'Bosnia y Hercegovina',
+      imagePath: '/images/europe/bosnia_hercegovina.png',
+    },
+    {
+      name: 'Ciudad del Vaticano',
+      imagePath: '/images/europe/ciudad_vaticano.png',
+    },
+    {
+      name: 'Croacia',
+      imagePath: '/images/europe/croacia.png',
+    },
+    {
+      name: 'Eslovenia',
+      imagePath: '/images/europe/eslovenia.png',
+    },
+    {
+      name: 'España',
+      imagePath: '/images/europe/espana.png',
+    },
+    {
+      name: 'Gibraltar',
+      imagePath: '/images/europe/gibraltar.png',
+    },
+    {
+      name: 'Grecia',
+      imagePath: '/images/europe/grecia.png',
+    },
+    {
+      name: 'Italia',
+      imagePath: '/images/europe/italia.png',
+    },
+    {
+      name: 'Kosovo',
+      imagePath: '/images/europe/kosovo.png',
+    },
+    {
+      name: 'Macedonia del Norte',
+      imagePath: '/images/europe/macedonia_norte.png',
+    },
+    {
+      name: 'Malta',
+      imagePath: '/images/europe/malta.png',
+    },
+    {
+      name: 'Montenegro',
+      imagePath: '/images/europe/montenegro.png',
+    },
+    {
+      name: 'Portugal',
+      imagePath: '/images/europe/portugal.png',
+    },
+    {
+      name: 'San Marino',
+      imagePath: '/images/europe/san_marino.png',
+    },
+    {
+      name: 'Serbia',
+      imagePath: '/images/europe/serbia.png',
+    },
+  ],
+  oceania: [
     {
       name: 'Fiyi',
       imagePath: '/images/flags/fiji.png',
