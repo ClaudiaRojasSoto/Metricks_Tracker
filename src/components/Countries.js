@@ -80,7 +80,7 @@ const Countries = () => {
               state: { countryData: country },
               // Pasamos toda la información del país en el estado de la ruta
             }}
-            key={country.name.common}
+            key={country.countryCode}
           >
             <div
               className="country-item"
