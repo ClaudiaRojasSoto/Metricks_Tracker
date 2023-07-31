@@ -8,10 +8,15 @@ import continent3 from '../imagesContinents/continents/asia.png';
 import continent4 from '../imagesContinents/continents/australia.png';
 import continent5 from '../imagesContinents/continents/europa.png';
 import continent6 from '../imagesContinents/continents/oceania.png';
+import worldImage from '../imagesContinents/continents/world.png'; // Ruta de la imagen "world"
 
 const HomePage = () => (
   <div className="home-page">
+    {/* Agrega la imagen "world" aquí */}
+    <img src={worldImage} alt="World" />
+
     <div className="continent-grid">
+      {/* Resto del código sigue igual */}
       <div className="continent-row">
         <Link to="/countries/africa">
           <img src={continent1} alt="Africa" />
