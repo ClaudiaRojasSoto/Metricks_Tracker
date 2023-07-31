@@ -1,5 +1,7 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useParams, Link } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import updateCountries from '../redux/actions/countriesActions';
 import flagsData from '../flagData';
 import '../styles/Countries.css';
 
@@ -31,15 +33,26 @@ function getContinentImage(continent) {
 
 const Countries = () => {
   const { continent } = useParams();
-  const countriesOfContinent = flagsData[continent];
+  const countries = useSelector((state) => state.countries.countries);
+  const dispatch = useDispatch();
 
-  if (!Array.isArray(countriesOfContinent)) {
+  useEffect(() => {
+    const countriesOfContinent = flagsData[continent];
+    dispatch(updateCountries(countriesOfContinent));
+  }, [continent, dispatch]);
+
+  if (!Array.isArray(countries)) {
     return (
       <div>
         <h1>{`Error: ${continent} It is not a valid continent.`}</h1>
       </div>
     );
   }
+
+  const handleCountryClick = (countryName) => {
+    console.log(countryName);
+    // logic to handle the clic event
+  };
 
   const capitalizeFirstLetter = (
     string,
@@ -50,11 +63,19 @@ const Countries = () => {
       <img src={getContinentImage(continent)} alt={continent} />
       <h1>{capitalizeFirstLetter(continent)}</h1>
       <div className="countries-grid">
-        {countriesOfContinent.map((country) => (
-          <div key={country.name} className="country-item">
-            <img src={country.imagePath} alt={country.name} />
-            <p>{country.name}</p>
-          </div>
+        {countries.map((country) => (
+          <Link to={`/country/${country.name}`} key={country.name}>
+            <div
+              className="country-item"
+              onClick={() => handleCountryClick(country.name)}
+              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleCountryClick(country.name); }}
+              tabIndex="0"
+              role="button"
+            >
+              <img src={country.imagePath} alt={country.name} />
+              <p>{country.name}</p>
+            </div>
+          </Link>
         ))}
       </div>
     </div>
