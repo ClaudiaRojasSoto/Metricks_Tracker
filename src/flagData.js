@@ -645,10 +645,6 @@ const flagsData = {
       imagePath: '/images/asia/vietnam.png',
     },
     {
-      name: 'China',
-      imagePath: '/images/asia/china.png',
-    },
-    {
       name: 'Corea del Norte',
       imagePath: '/images/asia/corea_del_norte.png',
     },
