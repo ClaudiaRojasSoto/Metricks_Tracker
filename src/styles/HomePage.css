@@ -1,8 +1,15 @@
 .home-page {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+img {
+  width: 45%;
+  max-width: 300px;
+  height: auto;
 }
 
 .continent-grid {
@@ -19,10 +26,4 @@
   width: 100%;
   max-width: 600px;
   margin-bottom: 20px;
-}
-
-img {
-  width: 45%; /* Ajusta el ancho de las imágenes para que quepan dos por fila */
-  max-width: 300px;
-  height: auto;
 }
