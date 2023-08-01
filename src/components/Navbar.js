@@ -3,8 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => (
   <nav>
-    <NavLink to="/" exact activeclassName="active">Home</NavLink>
-    <NavLink to="/details/1" activeClassName="active">Details</NavLink>
+    <NavLink to="/" exact="true" activeclassname="active">Home</NavLink>
+    {' '}
+    <NavLink to="/details/1" activeclassname="active">Details</NavLink>
   </nav>
 );
 
