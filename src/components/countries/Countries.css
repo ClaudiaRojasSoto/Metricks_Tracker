@@ -1,0 +1,17 @@
+.countries-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas con tamaño igual */
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+.country-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+img {
+  width: 100px; /* Ajusta el tamaño de la bandera */
+  height: auto;
+}
