@@ -30,7 +30,7 @@
 
 # 📖 Metrics Tracker <a name="about-project"></a>
 
->Metrics Tracker, is a mobile web application built using React and Redux! This capstone project aims to provide users with a comprehensive platform to monitor and analyze numeric data related to a topic of interest. The application fetches data from an API of your choice, offering users a diverse range of metrics to explore and analyze.
+>Welcome to Metricks Tracker, a mobile web app using React and Redux! Explore a selected API, monitor, and obtain information effortlessly! Metricks Tracker focuses primarily on the world population to offer a detailed and meaningful analysis of data related to this area. With Metricks Tracker, you will have access to valuable and up-to-date information about the world population, enabling you to make informed decisions and gain a clearer understanding of demographic patterns and trends. Start using Metricks Tracker now and discover a world of statistical information at your fingertips!
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
