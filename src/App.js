@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 import HomePage from './components/HomePage';
-import Navbar from './components/Navbar';
-import Countries from './components/Countries';
-import DetailsPage from './components/DetailsPage'; // asegúrate de importar DetailsPage
+import Navbar from './components/navbar/Navbar';
+import Countries from './components/countries/Countries';
+import DetailsPage from './components/details/DetailsPage';
 
 function App() {
   return (
