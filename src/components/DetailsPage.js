@@ -27,35 +27,37 @@ const DetailsPage = () => {
   const countryCurrency = currencies ? Object.keys(currencies).join(', ') : 'N/A';
 
   return (
-    <div className="details-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <h1 style={{ textAlign: 'center' }}>
-        {commonName}
-      </h1>
-      <img src={countryFlag} alt={`${commonName} Flag`} style={{ maxWidth: '200px', maxHeight: '100px' }} />
-      <p>
-        Capital:
-        {capitalName}
-      </p>
-      <p>
-        Population:
-        {populationCount}
-      </p>
-      <p>
-        Area:
-        {areaSize}
-      </p>
-      <p>
-        Region:
-        {regionName}
-      </p>
-      <p>
-        Languages:
-        {languageNames}
-      </p>
-      <p>
-        Currency:
-        {countryCurrency}
-      </p>
+    <div className="details-container">
+      <div className="details-header">
+        <h1>
+          {commonName}
+        </h1>
+        <img src={countryFlag} alt={`${commonName} Flag`} />
+        <p>
+          Capital:
+          {capitalName}
+        </p>
+        <p>
+          Population:
+          {populationCount}
+        </p>
+        <p>
+          Area:
+          {areaSize}
+        </p>
+        <p>
+          Region:
+          {regionName}
+        </p>
+        <p>
+          Languages:
+          {languageNames}
+        </p>
+        <p>
+          Currency:
+          {countryCurrency}
+        </p>
+      </div>
     </div>
   );
 };
