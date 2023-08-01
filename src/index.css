@@ -7,3 +7,16 @@
   list-style: none;
   text-decoration: none;
 }
+
+:root {
+  --font-size-nav: 25px;
+  --background-color: #ec4c8a;
+  --background-color-variant: #b03968;
+  --white: #fff;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--background-color);
+  color: #fff;
+}
