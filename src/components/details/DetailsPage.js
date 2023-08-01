@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux'; // Importamos useSelector desde react-redux
-import './DetailsPage.css';
+import s from './style.module.css';
 
 const DetailsPage = () => {
   // Accedemos a los datos del país desde el estado de Redux
@@ -27,36 +27,40 @@ const DetailsPage = () => {
   const countryCurrency = currencies ? Object.keys(currencies).join(', ') : 'N/A';
 
   return (
-    <div className="details-container">
-      <div className="details-header">
-        <h1>
-          {commonName}
-        </h1>
+    <div className={s.details_container}>
+      <div className={s.details_header}>
+        <div className={s.title_details}>
+          <h1>
+            {commonName}
+          </h1>
+          <p>
+            Population:
+            {populationCount}
+          </p>
+        </div>
         <img src={countryFlag} alt={commonName} />
-        <p>
-          Capital:
-          {capitalName}
-        </p>
-        <p>
-          Population:
-          {populationCount}
-        </p>
-        <p>
-          Area:
-          {areaSize}
-        </p>
-        <p>
-          Region:
-          {regionName}
-        </p>
-        <p>
-          Languages:
-          {languageNames}
-        </p>
-        <p>
-          Currency:
-          {countryCurrency}
-        </p>
+        <div className={s.details}>
+          <p className={s.details_1}>
+            Capital:
+            {capitalName}
+          </p>
+          <p className={s.details_2}>
+            Area:
+            {areaSize}
+          </p>
+          <p className={s.details_1}>
+            Region:
+            {regionName}
+          </p>
+          <p className={s.details_2}>
+            Languages:
+            {languageNames}
+          </p>
+          <p className={s.details_1}>
+            Currency:
+            {countryCurrency}
+          </p>
+        </div>
       </div>
     </div>
   );
