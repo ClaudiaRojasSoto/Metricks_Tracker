@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import world from '../imagesContinents/continents/world.png';
 
 import africa from '../imagesContinents/continents/africa.png';
 import america from '../imagesContinents/continents/america.png';
@@ -19,14 +20,19 @@ const HomePage = () => {
   ];
 
   return (
-    <div className="home">
-      {continents.map((continent) => (
-        <Link to={`/countries/${continent.name}`} key={continent.name}>
-          <img src={continent.image} alt={continent.name} />
-          <h2>{continent.name}</h2>
-        </Link>
-      ))}
-    </div>
+    <>
+      <header>
+        <img src={world} alt={world} />
+      </header>
+      <div className="home">
+        {continents.map((continent) => (
+          <Link to={`/countries/${continent.name}`} key={continent.name}>
+            <img src={continent.image} alt={continent.name} />
+            <h2>{continent.name}</h2>
+          </Link>
+        ))}
+      </div>
+    </>
   );
 };
 
