@@ -30,17 +30,19 @@ const HomePage = () => {
   return (
     <div className="home">
       <header>
-        <img src={world} alt={world} />
+        <img className="world_img" src={world} alt={world} />
       </header>
       <div className="continents-container">
         {continents.map((continent) => (
-          <div className="continents-row" key={continent.name}>
+          <div className="continents" key={continent.name}>
             <Link to={`/countries/${continent.name}`}>
               <img src={continent.image} alt={continent.name} />
-              <h2>
-                {continent.name}
-                {continentsPopulation[continent.name]}
-              </h2>
+              <div className="title-population">
+                <h3>
+                  {continent.name}
+                </h3>
+                <p>{continentsPopulation[continent.name]}</p>
+              </div>
             </Link>
           </div>
         ))}
