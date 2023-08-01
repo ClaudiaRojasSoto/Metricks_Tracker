@@ -12,12 +12,12 @@ const Navbar = () => {
   return (
     <nav className={s.navbar}>
       {location.pathname !== '/' && (
-      <button type="button" onClick={goBack}>
+      <button className={s.back_icon_button} type="button" onClick={goBack}>
         <FiArrowLeft />
       </button>
       )}
-      <FiMic />
-      <FiSettings />
+      <FiMic className={s.mic_icon} />
+      <FiSettings className={s.settings_icon} />
     </nav>
   );
 };
