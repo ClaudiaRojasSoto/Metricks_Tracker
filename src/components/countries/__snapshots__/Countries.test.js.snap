@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Countries tests It should match its snapshot 1`] = `
+<div>
+  <div
+    className="search"
+  >
+    <h1 />
+    <input
+      onChange={[Function]}
+      placeholder="Filter by country name..."
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="countries_container"
+  />
+</div>
+`;

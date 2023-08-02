@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage tests It should match its snapshot 1`] = `
+<div
+  className="home"
+>
+  <header>
+    <img
+      alt="world.png"
+      className="world_img"
+      src="world.png"
+    />
+    <div
+      className="title-world-population"
+    >
+      <h3>
+        World Population
+      </h3>
+      <p>
+        0
+      </p>
+    </div>
+  </header>
+  <div
+    className="continents-container"
+  >
+    <div
+      className="continents"
+    >
+      <a
+        href="/countries/africa"
+        onClick={[Function]}
+      >
+        <img
+          alt="africa"
+          src="africa.png"
+        />
+        <div
+          className="title-population"
+        >
+          <h3>
+            africa
+          </h3>
+          <p />
+        </div>
+      </a>
+    </div>
+    <div
+      className="continents"
+    >
+      <a
+        href="/countries/americas"
+        onClick={[Function]}
+      >
+        <img
+          alt="americas"
+          src="america.png"
+        />
+        <div
+          className="title-population"
+        >
+          <h3>
+            americas
+          </h3>
+          <p />
+        </div>
+      </a>
+    </div>
+    <div
+      className="continents"
+    >
+      <a
+        href="/countries/asia"
+        onClick={[Function]}
+      >
+        <img
+          alt="asia"
+          src="asia.png"
+        />
+        <div
+          className="title-population"
+        >
+          <h3>
+            asia
+          </h3>
+          <p />
+        </div>
+      </a>
+    </div>
+    <div
+      className="continents"
+    >
+      <a
+        href="/countries/europe"
+        onClick={[Function]}
+      >
+        <img
+          alt="europe"
+          src="europa.png"
+        />
+        <div
+          className="title-population"
+        >
+          <h3>
+            europe
+          </h3>
+          <p />
+        </div>
+      </a>
+    </div>
+    <div
+      className="continents"
+    >
+      <a
+        href="/countries/oceania"
+        onClick={[Function]}
+      >
+        <img
+          alt="oceania"
+          src="oceania.png"
+        />
+        <div
+          className="title-population"
+        >
+          <h3>
+            oceania
+          </h3>
+          <p />
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;
