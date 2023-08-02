@@ -7,6 +7,13 @@ header {
   background-color: var(-background-color-variant);
 }
 
+.title-world-population {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
 .continents-container {
   display: flex;
   flex-wrap: wrap;
