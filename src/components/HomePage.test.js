@@ -3,11 +3,11 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import store from '../redux/store';
-import HomePage from '../components/HomePage';
+import HomePage from './HomePage';
 
 describe('HomePage tests', () => {
   let homePage;
-  
+
   beforeAll(() => {
     homePage = renderer
       .create(

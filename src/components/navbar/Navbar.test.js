@@ -28,7 +28,7 @@ describe('Navbar tests', () => {
       render(
         <Router>
           <Navbar />
-        </Router>
+        </Router>,
       );
       const backButton = screen.getByRole('button');
       expect(backButton).toBeInTheDocument();
@@ -39,7 +39,7 @@ describe('Navbar tests', () => {
       render(
         <Router>
           <Navbar />
-        </Router>
+        </Router>,
       );
       const backButton = screen.queryByRole('button');
       expect(backButton).not.toBeInTheDocument();
