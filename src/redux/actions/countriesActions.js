@@ -16,10 +16,10 @@ const fetchCountriesByContinent = (continent) => async (dispatch) => {
     if (response.data && response.data.length > 0) {
       dispatch(updateCountries(response.data));
     } else {
-      console.log('No se devolvieron datos válidos del continente en la API');
+      console.log('No valid continent data returned in the API');
     }
   } catch (error) {
-    console.log('Error al obtener los datos del continente:', error);
+    console.log('Error getting continent data:', error);
   }
 };
 

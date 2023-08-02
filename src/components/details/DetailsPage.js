@@ -1,22 +1,18 @@
 import React from 'react';
-import { useSelector } from 'react-redux'; // Importamos useSelector desde react-redux
+import { useSelector } from 'react-redux';
 import s from './style.module.css';
 
 const DetailsPage = () => {
-  // Accedemos a los datos del país desde el estado de Redux
   const countryData = useSelector((state) => state.countries.countryData);
 
-  // Verificamos que countryData no sea null o undefined
   if (!countryData) {
     return <div>Loading...</div>;
   }
 
-  // podemos desestructurar sus propiedades de manera segura
   const {
     name, capital, population, region, languages, area, flags, currencies,
   } = countryData;
 
-  // Comprobaciones antes de acceder a las propiedades
   const commonName = name?.common ?? 'N/A';
   const capitalName = capital?.[0] ?? 'N/A';
   const populationCount = population ?? 'N/A';

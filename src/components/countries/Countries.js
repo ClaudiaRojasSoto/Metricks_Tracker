@@ -36,7 +36,7 @@ const Countries = () => {
           type="text"
           value={filter}
           onChange={handleFilterChange}
-          placeholder="Filtrar por nombre de país..."
+          placeholder="Filter by country name..."
         />
       </div>
       <div className={s.countries_container}>

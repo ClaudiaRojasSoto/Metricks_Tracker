@@ -1,4 +1,4 @@
-import { FETCH_CONTINENTS_POPULATION } from '../actions/continentsActions'; // Importa desde 'continentsActions'
+import { FETCH_CONTINENTS_POPULATION } from '../actions/continentsActions';
 
 const initialState = {};
 
