@@ -16,11 +16,26 @@ const fetchCountriesByContinent = (continent) => async (dispatch) => {
     if (response.data && response.data.length > 0) {
       dispatch(updateCountries(response.data));
     } else {
-      console.log('No se devolvieron datos válidos del continente en la API');
+      console.log('No valid continent data returned in the API');
     }
   } catch (error) {
-    console.log('Error al obtener los datos del continente:', error);
+    console.log('Error getting continent data:', error);
   }
 };
 
-export { updateCountries, updateCountryData, fetchCountriesByContinent };
+const fetchCountryDataByName = (countryName) => async (dispatch) => {
+  try {
+    const response = await axios.get(`https://restcountries.com/v3.1/name/${countryName}`);
+    if (response.data && response.data.length > 0) {
+      dispatch(updateCountryData(response.data[0]));
+    } else {
+      console.log('No valid country data returned in the API');
+    }
+  } catch (error) {
+    console.log('Error getting country data:', error);
+  }
+};
+
+export {
+  updateCountries, updateCountryData, fetchCountriesByContinent, fetchCountryDataByName,
+};

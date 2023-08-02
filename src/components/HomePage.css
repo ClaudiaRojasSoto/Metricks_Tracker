@@ -1,29 +1,58 @@
-.home-page {
+.world_img {
+  width: 100%;
+}
+
+header {
+  padding: 30px;
+  background-color: var(-background-color-variant);
+}
+
+.title-world-population {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.continents-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.continents {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  flex: 0 0 50%;
+  min-height: 400px;
   align-items: center;
-  height: 100vh;
+  justify-content: center;
 }
 
 img {
-  width: 45%;
-  max-width: 300px;
-  height: auto;
+  object-fit: cover;
+  width: 250px;
+  filter: brightness(0.6);
 }
 
-.continent-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 900px;
-  margin: 0 auto;
+h3 {
+  font-size: 25px;
+  margin: 20px;
 }
 
-.continent-row {
+.title-population {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  max-width: 600px;
-  margin-bottom: 20px;
+  align-items: center;
+  color: white;
+}
+
+.continents:nth-child(4n-3),
+.continents:nth-child(4n) {
+  background-color: var(--background-color-variant);
+}
+
+.continents:nth-child(4n-2),
+.continents:nth-child(4n-1) {
+  background-color: var(background-color);
 }
