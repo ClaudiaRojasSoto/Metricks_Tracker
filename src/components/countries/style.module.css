@@ -39,6 +39,10 @@
   margin: 5px;
 }
 
+.country_item:hover {
+  background-color: #f36099;
+}
+
 @media (max-width: 540px) {
   .country_item {
     min-height: 150px;

@@ -54,7 +54,17 @@ h3 {
 
 .continents:nth-child(4n-2),
 .continents:nth-child(4n-1) {
-  background-color: var(background-color);
+  background-color: var(--background-color);
+}
+
+.continents:hover:nth-child(4n-3),
+.continents:hover:nth-child(4n) {
+  background-color: #832f50;
+}
+
+.continents:hover:nth-child(4n-2),
+.continents:hover:nth-child(4n-1) {
+  background-color: #f36099;
 }
 
 @media (max-width: 540px) {
