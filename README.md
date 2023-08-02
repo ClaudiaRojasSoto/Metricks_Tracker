@@ -181,6 +181,13 @@
 
 > -   GitHub Docs for providing a wealth of information on Git and GitHub.
 
+> - Creative Commons for providing the design of this work.
+> - You can click on the link to see the original design:
+> - [original design on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)). 
+> - Nelson Sakwa in Behance, for her original design idea.
+> - You can click on the link to see the Nelson Sakwa profile on Behance.
+> - [Nelson Sakwa profile on Behance](https://www.behance.net/sakwadesignstudio)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
