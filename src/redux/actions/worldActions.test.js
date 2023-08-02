@@ -10,7 +10,10 @@ jest.mock('axios');
 describe('Continents Population Actions', () => {
   it('fetchWorldPopulation dispatches FETCH_WORLD_POPULATION', async () => {
     // Mock response
-    axios.get.mockResolvedValue({ data: [{ population: 1000 }, { population: 2000 }, { population: 3000 }] });
+    axios.get.mockResolvedValue({
+      data:
+         [{ population: 1000 }, { population: 2000 }, { population: 3000 }],
+    });
     const expectedAction = {
       type: 'FETCH_WORLD_POPULATION',
       payload: 6000,
