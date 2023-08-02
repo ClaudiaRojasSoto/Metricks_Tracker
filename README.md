@@ -69,8 +69,6 @@
 </details>
 
 
-
-
 ### Key Features <a name="key-features"></a>
 
 - **SPA**
@@ -87,7 +85,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> You can see a Demo [soon]().
+> You can see a Demo [here](https://population-tracker-h69j.onrender.com/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
