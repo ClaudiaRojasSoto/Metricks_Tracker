@@ -16,11 +16,12 @@ const fetchCountriesByContinent = (continent) => async (dispatch) => {
     if (response.data && response.data.length > 0) {
       dispatch(updateCountries(response.data));
     } else {
-      console.log('No valid continent data returned in the API');
+      return 'No valid continent data returned in the API';
     }
   } catch (error) {
-    console.log('Error getting continent data:', error);
+    return 'No valid continent data returned in the API';
   }
+  return null;
 };
 
 const fetchCountryDataByName = (countryName) => async (dispatch) => {
@@ -29,11 +30,12 @@ const fetchCountryDataByName = (countryName) => async (dispatch) => {
     if (response.data && response.data.length > 0) {
       dispatch(updateCountryData(response.data[0]));
     } else {
-      console.log('No valid country data returned in the API');
+      return 'No valid country data returned in the API';
     }
   } catch (error) {
-    console.log('Error getting country data:', error);
+    return 'Error getting country data:';
   }
+  return null;
 };
 
 export {
