@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchContinentsPopulation } from '../redux/actions/continentsActions';
+import { fetchWorldPopulation } from '../redux/actions/worldActions';
 import world from '../imagesContinents/continents/world.png';
 import './HomePage.css';
 
@@ -14,6 +15,7 @@ import oceania from '../imagesContinents/continents/oceania.png';
 const HomePage = () => {
   const dispatch = useDispatch();
   const continentsPopulation = useSelector((state) => state.continents);
+  const worldPopulation = useSelector((state) => state.worldPopulation);
 
   const continents = [
     { name: 'africa', image: africa },
@@ -25,12 +27,17 @@ const HomePage = () => {
 
   useEffect(() => {
     dispatch(fetchContinentsPopulation());
+    dispatch(fetchWorldPopulation());
   }, [dispatch]);
 
   return (
     <div className="home">
       <header>
         <img className="world_img" src={world} alt={world} />
+        <div className="title-world-population">
+          <h3>World Population</h3>
+          <p>{worldPopulation}</p>
+        </div>
       </header>
       <div className="continents-container">
         {continents.map((continent) => (
