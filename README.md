@@ -31,7 +31,7 @@
 # 📖 Metrics Tracker <a name="about-project"></a>
 
 >Welcome to Metricks Tracker, a mobile web app using React and Redux! Explore a selected API, monitor, and obtain information effortlessly! Metricks Tracker focuses primarily on the world population to offer a detailed and meaningful analysis of data related to this area. With Metricks Tracker, you will have access to valuable and up-to-date information about the world population, enabling you to make informed decisions and gain a clearer understanding of demographic patterns and trends. Start using Metricks Tracker now and discover a world of statistical information at your fingertips!.
-[Here](https://youtu.be/Hi2MclqUOjU) is the link to the video presentation 
+[Here](https://www.loom.com/share/148a4ded8986457e99c918d9a938794c?sid=837952a4-36f1-4d22-aac3-a9264feb2c0b) is the link to the video presentation 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
