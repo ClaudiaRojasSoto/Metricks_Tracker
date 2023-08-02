@@ -1,9 +1,20 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { useParams } from 'react-router-dom';
+import { fetchCountryDataByName } from '../../redux/actions/countriesActions';
+
 import s from './style.module.css';
 
 const DetailsPage = () => {
+  const dispatch = useDispatch();
   const countryData = useSelector((state) => state.countries.countryData);
+  const { name: countryName } = useParams();
+
+  useEffect(() => {
+    if (!countryData || countryData.name.common !== countryName) {
+      dispatch(fetchCountryDataByName(countryName));
+    }
+  }, [dispatch, countryData, countryName]);
 
   if (!countryData) {
     return <div>Loading...</div>;
