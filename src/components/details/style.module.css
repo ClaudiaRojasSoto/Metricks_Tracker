@@ -41,5 +41,5 @@
 
 .details_1 {
   width: 100%;
-  background-color: red;
+  background-color: var(--background-color-variant);
 }
