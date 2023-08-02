@@ -38,3 +38,32 @@
 .description p {
   margin: 5px;
 }
+
+.country_item:hover {
+  background-color: #f36099;
+}
+
+@media (max-width: 540px) {
+  .country_item {
+    min-height: 150px;
+  }
+
+  .search {
+    display: flex;
+    padding: 30px;
+  }
+
+  .search input {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .description {
+    padding: 10px;
+  }
+
+  .description p {
+    margin: 1px;
+    font-size: 9px;
+  }
+}

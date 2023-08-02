@@ -30,7 +30,8 @@
 
 # 📖 Metrics Tracker <a name="about-project"></a>
 
->Welcome to Metricks Tracker, a mobile web app using React and Redux! Explore a selected API, monitor, and obtain information effortlessly! Metricks Tracker focuses primarily on the world population to offer a detailed and meaningful analysis of data related to this area. With Metricks Tracker, you will have access to valuable and up-to-date information about the world population, enabling you to make informed decisions and gain a clearer understanding of demographic patterns and trends. Start using Metricks Tracker now and discover a world of statistical information at your fingertips!
+>Welcome to Metricks Tracker, a mobile web app using React and Redux! Explore a selected API, monitor, and obtain information effortlessly! Metricks Tracker focuses primarily on the world population to offer a detailed and meaningful analysis of data related to this area. With Metricks Tracker, you will have access to valuable and up-to-date information about the world population, enabling you to make informed decisions and gain a clearer understanding of demographic patterns and trends. Start using Metricks Tracker now and discover a world of statistical information at your fingertips!.
+[Here](https://www.loom.com/share/148a4ded8986457e99c918d9a938794c?sid=837952a4-36f1-4d22-aac3-a9264feb2c0b) is the link to the video presentation 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -117,14 +118,45 @@
 
 > The project follows the following folder and file structure:
 
-- /src: Contains the source files of the application.
-- /src/index.js: Main entry point of the JavaScript application.
-- /src/App.js: Top-level component of the application.
-- /src/components: Directory for React component
-- /src/redux: Directory for redux administration.
-- /public: Contains the public files and assets of the application.
-- /public/index.html: Base HTML file of the application.
-- /build: Contains the generated production files.
+- `/src`: Contains the source files of the application.
+- `/src/index.js`: Main entry point of the JavaScript application.
+- `/src/App.js`: Top-level component of the application where components are rendered.
+- `/src/components`: Directory for React components.
+- `/src/components/HomePage.js`: Component for the home page.
+- `/src/components/HomePage.test.js`: Tests for the home page.
+- `/src/components/HomePage.css`: Styles for the home page.
+- `/src/components/navbar`: Folder for the navigation bar components.
+- `/src/components/navbar/Navbar.js`: Component for the navigation bar.
+- `/src/components/navbar/Navbar.test.js`: Tests for the navigation bar.
+- `/src/components/navbar/Navbar.css`: Styles for the navigation bar.
+- `/src/components/details`: Folder for the details components.
+- `/src/components/details/Details.js`: Component for the details.
+- `/src/components/details/Details.test.js`: Tests for the details.
+- `/src/components/details/Details.css`: Styles for the details.
+- `/src/components/countries`: Folder for the countries components.
+- `/src/components/countries/Countries.js`: Component for the countries.
+- `/src/components/countries/Countries.test.js`: Tests for the countries.
+- `/src/components/countries/Countries.css`: Styles for the countries.
+- `/src/imagesContinents`: Contains the folder of images of continents.
+- `/src/imagesContinents/continents`: Folder with images of continents.
+- `/src/redux`: Directory for Redux management.
+- `/src/redux/store.js`: Redux store configuration.
+- `/src/redux/actions`: Folder for Redux actions.
+- `/src/redux/actions/worldActions.js`: Actions for world management.
+- `/src/redux/actions/worldActions.test.js`: Tests for world actions.
+- `/src/redux/actions/countriesActions.js`: Actions for countries management.
+- `/src/redux/actions/countriesActions.test.js`: Tests for countries actions.
+- `/src/redux/actions/continentsActions.js`: Actions for continents management.
+- `/src/redux/actions/continentsActions.test.js`: Tests for continents actions.
+- `/src/redux/reducers`: Folder for Redux reducers.
+- `/src/redux/reducers/rootReducer.js`: Root reducer for the application.
+- `/src/redux/reducers/worldReducer.js`: Reducer for world management.
+- `/src/redux/reducers/countriesReducer.js`: Reducer for countries management.
+- `/src/redux/reducers/continentsReducer.js`: Reducer for continents management.
+- `/src/redux/reducers/*.test.js`: Tests for the reducers.
+- `/public`: Contains the public files and assets of the application.
+- `/public/index.html`: Base HTML file of the application.
+- `/build`: Contains the generated production files.
 
 ### Setup
 
@@ -148,7 +180,8 @@
 👤 **Claudia Rojas**
 
 -   GitHub: [@githubhandle](https://github.com/ClaudiaRojasSoto)
--   LinkedIn: [LinkedIn](https://www.linkedin.com/in/claudia-soto-260504208/)
+-   LinkedIn: [LinkedIn](inkedin.com/in/claudia-rojas-soto)
+-   AngelList: [AngelList](https://wellfound.com/u/claudia-rojas-2)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -180,6 +213,13 @@
 > -   Microverse for providing the opportunity to learn Git and GitHub in a collaborative environment.
 
 > -   GitHub Docs for providing a wealth of information on Git and GitHub.
+
+> - Creative Commons for providing the design of this work.
+> - You can click on the link to see the original design:
+> - [original design on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)). 
+> - Nelson Sakwa in Behance, for her original design idea.
+> - You can click on the link to see the Nelson Sakwa profile on Behance.
+> - [Nelson Sakwa profile on Behance](https://www.behance.net/sakwadesignstudio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
