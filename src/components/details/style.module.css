@@ -43,3 +43,19 @@
   width: 100%;
   background-color: var(--background-color-variant);
 }
+
+@media (max-width: 540px) {
+  .details_header h1 {
+    font-size: 20px;
+    margin: 8px;
+  }
+
+  .title_details p {
+    font-size: 15px;
+    margin-right: 4px;
+  }
+
+  .details p {
+    padding: 15px;
+  }
+}

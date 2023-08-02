@@ -56,3 +56,18 @@ h3 {
 .continents:nth-child(4n-1) {
   background-color: var(background-color);
 }
+
+@media (max-width: 540px) {
+  .continents {
+    min-height: 200px;
+  }
+
+  img {
+    width: 125px;
+  }
+
+  h3 {
+    font-size: 10px;
+    margin: 5px;
+  }
+}
