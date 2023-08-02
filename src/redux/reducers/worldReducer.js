@@ -1,6 +1,6 @@
 import { FETCH_WORLD_POPULATION } from '../actions/worldActions';
 
-const initialState = 0; // Valor inicial para la población mundial
+const initialState = 0;
 
 const worldReducer = (state = initialState, action) => {
   switch (action.type) {
