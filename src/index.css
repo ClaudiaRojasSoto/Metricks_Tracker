@@ -1,0 +1,22 @@
+* * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --font-size-nav: 25px;
+  --background-color: #ec4c8a;
+  --background-color-variant: #b03968;
+  --white: #fff;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--background-color);
+  color: #fff;
+}

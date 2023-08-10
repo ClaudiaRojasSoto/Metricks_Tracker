@@ -1,0 +1,38 @@
+.navbar {
+  background-color: var(--background-color-variant);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mic_icon,
+.settings_icon,
+.back_icon_button {
+  font-size: var(--font-size-nav);
+  color: #f5a6c4;
+  margin: 40px;
+  transition: filter 0.3s;
+}
+
+.back_icon_button {
+  margin-right: auto;
+  background-color: var(--background-color-variant);
+}
+
+.mic_icon:hover,
+.settings_icon:hover,
+.back_icon_button:hover {
+  color: white;
+}
+
+@media (max-width: 540px) {
+  .mic_icon,
+  .settings_icon,
+  .back_icon_button {
+    font-size: 20px;
+    margin: 20px;
+  }
+
+  .back_icon_button {
+    margin-right: auto;
+  }
+}
